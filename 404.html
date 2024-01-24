@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--"Meta Date"-->
+
+    <!--"Favicon"-->
+
+    <title>The theater</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/icomoon.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <!--"header start"-->
+    <header id="header">
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg bg-body-tertiary container-xxl">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index">
+                    <img class="logo-img" src="./src/images/header/logo.webp" alt="logo.web" />
+                </a>
+                <button class="navbar-toggler" type="button" onclick="displayBlock()">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon toggler-span"></span>
+                </button>
+                <div class="display-box display-destop" id="offcanvasDarkNavbar">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="#header">
+                            <img src="./src/images/schedule/Vector.svg" alt="Vector.svg" />
+                        </a>
+                        <div class="switch-languages">
+                            <a class="text-language border-right" href="404">Ua</a>
+                            <a class="text-language border-left" href="404-en">En</a>
+                        </div>
+                        <button type="button" class="btn-close btn-close-white btn-close-menu"
+                            onclick="displayClose()"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="destop-logo">
+                            <a class="" href="index.html">
+                                <img class="mini-logo" src="./src/images/header/mini-logo.svg" alt="mini-logo.webp">
+                            </a>
+                        </div>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 ">
+                            <li class="nav-item item-text-zero"><a class="nav-link" href="index.html#ourTeachers">Наші
+                                    викладачі</a></li>
+                            <li class="nav-item item-text-one"><a class="nav-link"
+                                    href="index.html#theaterIntensive">Театральний
+                                    інтенсив</a></li>
+                            <li class="nav-item destop-none"><a class="nav-link" href="index.html#schedule">Розклад
+                                    занять</a></li>
+                            <li class="nav-item item-text margin-text"><a class="nav-link"
+                                    href="index.html#mainActors">Головні
+                                    актори <br class="br-text"> нашого театру</a></li>
+                            <li class="nav-item item-text"><a class="nav-link" href="index.html#footer">Контакти</a>
+                            </li>
+                            <li class="nav-item destop-none"><a class="nav-link" href="index.html#footer">Локація</a>
+                            </li>
+                        </ul>
+                        <div class="switch-languages destop-languages">
+                            <a class="text-language border-right" href="404">Ua</a>
+                            <a class="text-language border-left" href="404-en">En</a>
+                        </div>
+                        <div class="text-center text-button">
+                            <button class="btn btn-form button" type="submit" onclick="openForm()">
+                                <p>Записатись</p>
+                            </button>
+                        </div>
+                        <div class="block-sharing">
+                            <a class="sherang" href="https://t.me/share/url?url=https://thetheater.intita.com/"
+                                target="_blank">
+                                <div class="icon-telegram header-icon"></div>
+                            </a>
+                            <a class="sherang"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https://thetheater.intita.com/"
+                                target="_blank">
+                                <div class="icon-fecebook header-icon"></div>
+                            </a>
+                            <a class="sherang"
+                                href="https://www.linkedin.com/shareArticle?mini=true&url=https://thetheater.intita.com/"
+                                target="_blank">
+                                <div class="icon-Instagram header-icon"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--"header end"-->
+
+    <!--"modal windows start"-->
+    <section id="modal-overlay">
+        <!-- form window -->
+        <div id="form-window">
+            <div class="window-top">
+                <button id="close-form-window" type="button">
+                    <img src="src/images/schedule/ToClose.svg" alt="close">
+                </button>
+            </div>
+            <form class="registration-form" method="post" accept-charset="utf-8">
+                <div class="input-wrapper">
+                    <input class="phone-number" type="text" name="phone" placeholder="Телефон*" value="">
+                    <p class="error-text"></p>
+                </div>
+                <div class="input-wrapper" action="https://intita.com/api/v1/entrant">
+                    <input class="input-name" maxlength="30" type="text" name="first_name" placeholder="Імʼя*" value="">
+                    <p class="error-text"></p>
+                </div>
+                <button class="check-form button" type="submit">
+                    <p>Записатись</p>
+                </button>
+                <input type="hidden" name="organization_id" value="107">
+            </form>
+        </div>
+        <div id="second-window">
+            <div class="window-top">
+                <button id="close-second-window" type="button">
+                    <img src="src/images/schedule/ToClose.svg" alt="close">
+                </button>
+            </div>
+            <div class="some-text">
+                <p>Дякуємо!</p>
+                <span class="form-name-content">Ми зателефонуєм Вам найближчим часом!</span>
+            </div>
+        </div>
+    </section>
+    <!--"modal window end"-->
+
+    <!--"404 main block start"-->
+    <section class="block-404">
+        <div id="wraper-404">
+            <img class="logo-404" src="./src/images/404image/404logo.png" />
+            <div class="about">
+                <p class="title">Упс, тут щось трапилось!</p>
+                <p class="about-text">
+                    Схоже наші маленькі актори трішки запізнюються,
+                    але вони дуже чекають на вас.<br><br> Скоріше переходьте на головну сторінку!
+                </p>
+            </div>
+            <a href="index.html" class="button-404">На головну</a>
+            <div class="colored-404-wraper row">
+                <div class="col-4"></div>
+                <div class="colored-404 col-4">
+                    <p>4<span class="colored-404-white">0</span>4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--"404 main block end"-->
+
+    <!--"footer start"-->
+    <footer id="footer" class="footer-404">
+        <div class="group-developers">
+            <div class="text-develop">
+                <a href="developers.html" class="icon-academy">
+                    <img class="logo-Academy" src="./src/images/Footer/Logo.svg" alt="Logo.svg">
+                </a>
+            </div>
+            <div class="text-develop">
+                <a href="developers.html">
+                    <p class="text-logo">Розроблено студентами<br>Вінницької ІТ-Академії 2023</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--"footer end"-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- recaptcha -->
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/gEr-ODersURoIfof1hiDm7R5/recaptcha__ru.js"
+        crossorigin="anonymous"
+        integrity="sha384-TLQJmdPnLiPAQT4yetwoOrytOZ6gFBz1x2lmoy5A/z26Q7wBq8QWOoxzSlcobUUY"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP"></script>
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

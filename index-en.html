@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--"Meta Date-Start"-->
+    <meta name="author" content="The театр">
+    <meta name="title" content="The театр - місце, де ваша дитина розкриє свій потенціал">
+    <meta name="description"
+        content="The театр театральна студія формує цілісну та цікаву особистість, створює різноманітне дозвілля та знайомиить з новими друзями">
+    <meta name="keywords"
+        content="The театр, театральна студія, дитячий театр, дитячі вистави, Вінниця, дитяче дозвілля, маленькі актори, акторська майстерність, вокал, танці, театральний інтенсив, кінотабір">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thetheater.intita.com/">
+    <meta property="og:title" content="The театр - місце, де ваша дитина розкриє свій потенціал">
+    <meta property="og:description"
+        content="The театр театральна студія формує цілісну та цікаву особистість, створює різноманітне дозвілля та знайомиить з новими друзями">
+    <meta property="og:image" content="https://thetheater.intita.com/src/images/Footer/sharing.png">
+    <!--"Meta Date-END"-->
+
+    <!--"Favicon"-->
+    <link rel="shortcut icon" sizes="32x32" href="src/images/favicon/favicon32x32.png">
+    <link rel="apple-touch-icon-precomposed" sizes="16x16" href="src/images/favicon/favicon16x16.png">
+    <title>The theater</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="src/css/icomoon.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <!--"loader start"-->
+    <div class="loader" id="loader">
+        <img src="./src/images/Footer/mask-loader.png" alt="Loader">
+    </div>
+    <!--"loader end"-->
+
+    <div id="wrapper">
+        <!--"header start"-->
+        <header id="header">
+            <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg bg-body-tertiary container-xxl">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index-en.html">
+                        <img class="logo-img" src="./src/images/header/logo.webp" alt="logo.web" />
+                    </a>
+                    <button class="navbar-toggler" type="button" onclick="displayBlock()">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon toggler-span"></span>
+                    </button>
+                    <div class="display-box display-destop" id="offcanvasDarkNavbar">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand" href="#header">
+                                <img src="./src/images/schedule/Vector.svg" alt="Vector.png" />
+                            </a>
+                            <div class="switch-languages">
+                                <a class="text-language border-right border-right-mobil-en" href="./index.html">Ua</a>
+                                <a class="text-language border-left border-left-mobil-en" href="./index-en.html">En</a>
+                            </div>
+                            <button type="button" class="btn-close btn-close-white btn-close-menu"
+                                onclick="displayClose()"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="destop-logo">
+                                <a class="" href="index-en.html">
+                                    <img class="mini-logo" src="./src/images/header/mini-logo.svg" alt="mini-logo.webp">
+                                </a>
+                            </div>
+                            <ul class="navbar-nav justify-content-end flex-grow-1 ">
+                                <li class="nav-item item-text-zero item-en"><a class="nav-link" href="#ourTeachers">Our
+                                        teachers</a></li>
+                                <li class="nav-item item-text-one item-en-two item-en-destop"><a class="nav-link"
+                                        href="#theaterIntensive">Theatrical intensive</a></li>
+                                <li class="nav-item destop-none"><a class="nav-link" href="#schedule">Lesson
+                                        schedule</a></li>
+                                <li class="nav-item item-text margin-text item-text-en"><a class="nav-link"
+                                        href="#mainActors">Leading actors<br class="br-text">of our theater</a></li>
+                                <li class="nav-item item-text"><a class="nav-link" href="#footer">Contacts</a></li>
+                                <li class="nav-item destop-none"><a class="nav-link" href="#footer">Location</a></li>
+                            </ul>
+                            <div class="switch-languages destop-languages">
+                                <a class="text-language border-right border-right-mobil-en " href="./index.html">Ua</a>
+                                <a class="text-language border-left border-left-mobil-en" href="#">En</a>
+                            </div>
+                            <div class="text-center text-button">
+                                <button class="btn btn-form button" type="submit" onclick="openForm()">
+                                    <p>Sign up</p>
+                                </button>
+                            </div>
+                            <div class="block-sharing">
+                                <a class="sherang sharing-flex"
+                                    href="https://t.me/share/url?url=https://thetheater.intita.com/" target="_blank">
+                                    <div class="icon-telegram header-icon"></div>
+                                </a>
+                                <a class="sherang sharing-flex"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https://thetheater.intita.com/"
+                                    target="_blank">
+                                    <div class="icon-fecebook header-icon"></div>
+                                </a>
+                                <a class="sherang sharing-flex"
+                                    href="https://instagram.com/the_theater_vin?igshid=NzZlODBkYWE4Ng=="
+                                    target="_blank">
+                                    <div class="icon-Instagram header-icon"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--"header end"-->
+
+        <!--"main-block theater start"-->
+        <section id="mainTheater" class="container-xxl">
+            <div class="containerTheater">
+                <div class="titleBlock">
+                    <div class="logoTheater logoTheater-en">
+                        <img src="./src/images/mainTheate/logoTheater.svg" alt="There is logo the Theater">
+                    </div>
+                    <div class="title-text">
+                        <h2>The <span class="red-text">theater</span> - is a place where your child can discover and
+                            develop his full potential.</h2>
+                    </div>
+                    <div class="buttonSignUp">
+                        <button class="button" onclick="openForm()">Sign up</button>
+                    </div>
+                    <div class="buttonSchedule">
+                        <button class="button">
+                            <a href="src/documents/Schedule-en.pdf" download class="download-schedule">Download the
+                                schedule</a></button>
+                    </div>
+                </div>
+
+                <div class="imageBlock imageBlock-en">
+                    <img src="./src/images/mainTheate/mainImage.webp" alt="There is foto the performance">
+                </div>
+
+                <ul class="sharingBlock">
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://thetheater.intita.com"
+                            target="_blank">
+                            <div class="icon-fecebook"></div>
+                        </a>
+                    </li>
+
+                    <li><a href="https://instagram.com/the_theater_vin?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <div class="icon-Instagram"></div>
+                        </a>
+                    </li>
+
+                    <li><a href="https://t.me/share/url?url=https://thetheater.intita.com" target="_blank">
+                            <div class="icon-telegram"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--"main-block theater end"-->
+
+        <!--"our teachers start"-->
+        <section id="ourTeachers" class="container-xxl">
+            <h2>Our teachers</h2>
+            <img src="./src/images/heading-logo.svg" class="heading-logo" />
+            <div class="teachers-wrapper">
+                <div class="teachers-main">
+                    <img src="./src/images/our-teachers/teachers-main.webp" alt="Фото керівника театру" />
+                    <div class="teachers-main-text">
+                        <h3>Karen</h3>
+                        <h4>The head of the theater</h4>
+                        <p>My name is Vardanian Karen Karenovych. I was born in Vinnytsia in the winter of 1995.</p>
+                        <p>In 4th grade, I acted in my first school play, and from that moment, I aspired to become an
+                            actor.</p>
+                        <p>In 2014, he enrolled in the Faculty of Theater and Film at Ivan Karpenko-Kary Kyiv National
+                            University of Theater, Cinema and Television.I pursued a Master's degree in 2018 to further
+                            my studies. </p>
+                        <p>I have corrected any spelling, grammar, and punctuation errors.</p>
+                        <p>He graduated with honors from both of his degrees. I began teaching in Kyiv in 2016 but
+                            always dreamed of opening my own studio in my hometown.</p>
+                        <p>In 2020, my dream finally came true, and now my children and I are able to dream together.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="teachers-group container">
+                    <div class="row">
+                        <div class="col teachers-item">
+                            <img src="./src/images/our-teachers/teachers-1.webp" />
+                            <div class="teachers-item-text">
+                                <h3>Victoria </h3>
+                                <h4>Vocal teacher</h4>
+                                <a href="" class="teachers-item-btn" data-bs-toggle="modal"
+                                    data-bs-target="#ourTeachersModal" data-component="teacher1-en">More details...</a>
+                            </div>
+                        </div>
+                        <div class="col teachers-item">
+                            <img src="./src/images/our-teachers/teachers-2.webp" />
+                            <div class="teachers-item-text">
+                                <h3>Daria </h3>
+                                <h4>Theater director</h4>
+                                <a href="" class="teachers-item-btn" data-bs-toggle="modal"
+                                    data-bs-target="#ourTeachersModal" data-component="teacher2-en">More details...</a>
+                            </div>
+                        </div>
+                        <div class="col teachers-item">
+                            <img src="./src/images/our-teachers/teachers-3.webp" />
+                            <div class="teachers-item-text">
+                                <h3>Vladyslava </h3>
+                                <h4>Choreography teacher</h4>
+                                <a href="" class="teachers-item-btn" data-bs-toggle="modal"
+                                    data-bs-target="#ourTeachersModal" data-component="teacher3-en">More details...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col teachers-item">
+                            <img src="./src/images/our-teachers/teachers-4.webp" />
+                            <div class="teachers-item-text">
+                                <h3>Maria </h3>
+                                <h4>Choreography teacher</h4>
+                                <a href="" class="teachers-item-btn" data-bs-toggle="modal"
+                                    data-bs-target="#ourTeachersModal" data-component="teacher4-en">More details...</a>
+                            </div>
+                        </div>
+                        <div class="col teachers-item">
+                            <img src="./src/images/our-teachers/teachers-5.webp" />
+                            <div class="teachers-item-text">
+                                <h3>Veronika </h3>
+                                <h4>Studio director</h4>
+                                <a href="" class="teachers-item-btn" data-bs-toggle="modal"
+                                    data-bs-target="#ourTeachersModal" data-component="teacher5-en">More details...</a>
+                            </div>
+                        </div>
+                        <div class="col teachers-item teachers-item-last">
+                            <img src="./src/images/our-teachers/teachers-6.webp" />
+                            <div class="teachers-item-text">
+                                <h3>Olga </h3>
+                                <h4>Vocal teacher</h4>
+                                <a href="" class="teachers-item-btn" data-bs-toggle="modal"
+                                    data-bs-target="#ourTeachersModal" data-component="teacher6-en">More details...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ourTeachersModal" role="dialog">
+                <div class="modal-dialog modal-dialog-centered">
+                    <!-- Modal content-->
+                    <div class="modal-content modal-en "></div>
+                </div>
+            </div>
+        </section>
+        <!--"our teachers end"-->
+
+        <!--"theater intensive start"-->
+        <section id="theaterIntensive" class="container-xxl">
+            <h2>Theater intensive</h2>
+            <img src="./src/images/heading-logo.svg" class="heading-logo" />
+            <div class="intensive-block-wrap-mb">
+                <div class="swiper theaterIntensiveMobileSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/_QBEuUKa25k?si=TtXbjCmrGlmZNQbA"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/JDHqfAadLoY?si=PcnfMW3AIE-wyXPH"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/O3wnkB8ml2g?si=hdfg8rDbLrOtdaEk"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/jhHGjd4gzao?si=I7faEEkWB4zbvvV3"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="slider-nav-buttons">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intensive-block-wrap-dt">
+                <div class="swiper theaterIntensiveDesktopSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/_QBEuUKa25k?si=TtXbjCmrGlmZNQbA"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/JDHqfAadLoY?si=PcnfMW3AIE-wyXPH"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/O3wnkB8ml2g?si=hdfg8rDbLrOtdaEk"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/jhHGjd4gzao?si=I7faEEkWB4zbvvV3"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper theaterIntensiveThumbsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="thumbnail" src="./src/images/theater-intensive/video-1.jpg"
+                                alt="Thumbnail for video 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="thumbnail" src="./src/images/theater-intensive/video-2.jpg"
+                                alt="Thumbnail for video 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="thumbnail" src="./src/images/theater-intensive/video-3.jpg"
+                                alt="Thumbnail for video 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="thumbnail" src="./src/images/theater-intensive/video-4.jpg"
+                                alt="Thumbnail for video 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--"theater intensive end"-->
+
+        <!--"lessons schedule start"-->
+        <section id="schedule">
+            <h2>Lessons schedule</h2>
+            <img src="src/images/heading-logo.svg" class="heading-logo">
+            <img src="src/images/schedule/AbstractTop.png" alt="abstract">
+            <div class="wraper" id="box">
+                <a href="#popup" class="box__button button">Group 6+</a>
+                <a href="#popup-junior" class="box__button button">Junior group 6+</a>
+                <a href="#popup-middle" class="box__button button">Middle group 8+</a>
+                <a href="#popup-senior" class="box__button button">Senior group 13+</a>
+            </div>
+            <img src="src/images/schedule/AbstractBottom.png" alt="abstract">
+            <div class="popup" id="popup">
+                <div class="wraper-close">
+                    <img src="src/images/schedule/Vector.svg" alt="logo">
+                    <a href="#box" class="popup__close"><img src="src/images/schedule/ToClose.svg" alt="close"></a>
+                </div>
+                <h3>Group 6+</h3>
+                <div class="about-wraper">
+                    <div class="about">
+                        <h5>Saturday</h5>
+                        <p>10:00 - 11:00<br>acting</p>
+                    </div>
+                    <div>
+                        <h5>Sunday</h5>
+                        <p>10:00 - 11:00<br>acting</p>
+                        <p>11:00 - 12:00<br>choreography</p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-junior">
+                <div class="wraper-close">
+                    <img src="src/images/schedule/Vector.svg" alt="logo">
+                    <a href="#box" class="popup__close"><img src="src/images/schedule/ToClose.svg" alt="close"></a>
+                </div>
+                <h3>Junior group 6+</h3>
+                <div class="about-wraper">
+                    <div class="about">
+                        <h5>Wednesday</h5>
+                        <p>17:00 - 18:00<br>vocal training</p>
+                        <p>18:00 - 19:00<br>acting</p>
+                    </div>
+                    <div class="about-second">
+                        <h5>Friday</h5>
+                        <p>17:00 - 18:00<br>choreography</p>
+                        <p>18:00 - 19:00<br>acting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-middle">
+                <div class="wraper-close">
+                    <img src="src/images/schedule/Vector.svg" alt="logo">
+                    <a href="#box" class="popup__close"><img src="src/images/schedule/ToClose.svg" alt="close"></a>
+                </div>
+                <h3>Middle group 8+</h3>
+                <div class="about-wraper">
+                    <div class="about">
+                        <h5>Wednesday</h5>
+                        <p>19:00 - 20:00<br>vocal training</p>
+                        <p>20:00 - 21:00<br>acting</p>
+                    </div>
+                    <div class="about-second">
+                        <h5>Friday</h5>
+                        <p>19:00 - 20:00<br>choreography</p>
+                        <p>20:00 - 21:00<br>acting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-senior">
+                <div class="wraper-close">
+                    <img src="src/images/schedule/Vector.svg" alt="logo">
+                    <a href="#box" class="popup__close"><img src="src/images/schedule/ToClose.svg" alt="close"></a>
+                </div>
+                <h3>Senior group 13+</h3>
+                <div class="about-wraper">
+                    <div class="about">
+                        <h5>Wednesday</h5>
+                        <p>18:00 - 19:00<br>vocal training</p>
+                        <p>19:00 - 20:00<br>acting</p>
+                    </div>
+                    <div class="about-second">
+                        <h5>Friday</h5>
+                        <p>18:00 - 19:00<br>choreography</p>
+                        <p>19:00 - 20:00<br>acting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--"lessons schedule end"-->
+
+        <!--"main actors start"-->
+        <section id="mainActors">
+            <div class="containerMainAct">
+                <div class="titleBlock">
+                    <h2 class="titleText">Main actors <br>our theater</h2>
+                </div>
+                <div class="container-swiper">
+                    <!-- mobile-version -->
+                    <div class="swiper swiperMainActMob">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="foto-block">
+                                        <div class="foto-img">
+                                            <img src="./src/images/mainActors/foto_1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-block">
+                                        <p>kiriakidiolga <br>
+                                            Karen, Dasha and the entire staff of The_theater!<br>
+                                            Thank you for your incredible work with our children.
+                                            It is extremely pleasant that in Vinnytsia there is an opportunity for
+                                            children
+                                            to study at a really professional level and learn the world of theater and
+                                            cinema 🤗 </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="foto-block">
+                                        <div class="foto-img">
+                                            <img src="./src/images/mainActors/foto_2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-block">
+                                        <p>himich_dariya <br>
+                                            We are children, we feel your positive, caring attitude and look forward to
+                                            every lesson! ✨<br>
+                                            Thank you @the_theater_vin for the opportunity to feel like a real actor ❤️
+                                            love.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="foto-block">
+                                        <div class="foto-img">
+                                            <img src="./src/images/mainActors/foto_3.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-block">
+                                        <p>tetiana.krasnovetska<br>
+                                            Charming! Thank you! ❤️<br>
+                                            Great inspiration and don't stop what you are doing! That is a great light
+                                            💫<br>
+                                            We all believe in Victory and I am sure it will be very soon 💛💙</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="foto-block">
+                                        <div class="foto-img">
+                                            <img src="./src/images/mainActors/foto_4.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-block">
+                                        <p>yulya_honcharuk <br>
+                                            Many thanks to the teachers !!!!! 😍<br>
+                                            Today Yaryna had a performance at @the_theater_vin ❤️<br>
+                                            Both the child and parents are delighted - it's just incredible!👍👍👍</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="foto-block">
+                                        <div class="foto-img">
+                                            <img src="./src/images/mainActors/foto_5.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-block">
+                                        <p>_mosianyaa_<br>
+                                            "He who seeks will always find"!
+                                            New interests and acquaintances in "The_theater_vin"<br>
+                                            @WERRONIKASSS is delighted with the acting workshop—gratitude
+                                            to the incredibly talented teachers @vardaniankaren_, @DASHA_LY_BA.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="foto-block">
+                                        <div class="foto-img">
+                                            <img src="./src/images/mainActors/foto_6.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-block">
+                                        <p>marijKadubrikova<br>
+                                            Thank you @the_theater_vin for this week, emotions, movies, words.<br>
+                                            Thank you for not giving me any doubts about becoming an actress ❤️.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- desktop-version -->
+                    <div id="swiperMainActDesc" class="swiper swiper-container">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-item">
+                                    <div class="foto-block">
+                                        <img src="./src/images/mainActors/foto_1.svg" alt="There is foto">
+                                    </div>
+                                    <div class="text-block">
+                                        <p>kiriakidiolga <br>
+                                            Karen, Dasha and the entire staff of The_theater!<br>
+                                            Thank you for your incredible work with our children.
+                                            It is extremely pleasant that in Vinnytsia there is an opportunity for
+                                            children
+                                            to study at a really professional level and learn the world of theater and
+                                            cinema 🤗 </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-item">
+                                    <div class="foto-block">
+                                        <img src="./src/images/mainActors/foto_2.svg" alt="There is foto"">
+                                    </div>
+                                    <div class=" text-block">
+                                        <p>himich_dariya <br>
+                                            We are children, we feel your positive, caring attitude and look forward to
+                                            every lesson! ✨<br>
+                                            Thank you @the_theater_vin for the opportunity to feel like a real actor ❤️
+                                            love.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-item">
+                                    <div class="foto-block">
+                                        <img src="./src/images/mainActors/foto_3.svg" alt="There is foto">
+                                    </div>
+                                    <div class="text-block">
+                                        <p>tetiana.krasnovetska<br>
+                                            Charming! Thank you! ❤️<br>
+                                            Great inspiration and don't stop what you are doing! That is a great light
+                                            💫<br>
+                                            We all believe in Victory and I am sure it will be very soon 💛💙</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-item">
+                                    <div class="foto-block">
+                                        <img src="./src/images/mainActors/foto_4.svg" alt="There is foto">
+                                    </div>
+                                    <div class="text-block">
+                                        <p>yulya_honcharuk <br>
+                                            Many thanks to the teachers !!!!! 😍<br>
+                                            Today Yaryna had a performance at @the_theater_vin ❤️<br>
+                                            Both the child and parents are delighted - it's just incredible!👍👍👍</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-item">
+                                    <div class="foto-block">
+                                        <img src="./src/images/mainActors/foto_5.svg" alt="There is foto">
+                                    </div>
+                                    <div class="text-block">
+                                        <p>_mosianyaa_<br>
+                                            "He who seeks will always find"!
+                                            New interests and acquaintances in "The_theater_vin"<br>
+                                            @WERRONIKASSS is delighted with the acting workshop—gratitude
+                                            to the incredibly talented teachers @vardaniankaren_, @DASHA_LY_BA.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-item">
+                                    <div class="foto-block">
+                                        <img src="./src/images/mainActors/foto_6.svg" alt="There is foto">
+                                    </div>
+                                    <div class="text-block">
+                                        <p>marijKadubrikova<br>
+                                            Thank you @the_theater_vin for this week, emotions, movies, words.<br>
+                                            Thank you for not giving me any doubts about becoming an actress ❤️.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <!--"main actors end"-->
+
+        <!--"footer start"-->
+        <footer id="footer">
+            <div class="main">
+                <div class="left-box">
+                    <div class="box-border-destop">
+                        <ul class="social-options">
+                            <li class="social-flex">
+                                <a href="index-en.html"><img class="loder-img" src="./src/images/header/logo.webp"
+                                        alt="logo.web"></a>
+                            </li>
+                            <li class="social-flex"><a href="https://www.facebook.com/thetheatervin" target="_blank"
+                                    class="fecebook icon-fecebook"></a>
+                            </li>
+                            <li class="social-flex"><a
+                                    href="https://www.instagram.com/the_theater_vin/?igshid=MzRlODBiNWFlZA%3D%3D"
+                                    target="_blank" class="Instagram icon-Instagram"></a>
+                            </li>
+                            <li class="social-flex"><a href="https://t.me/KarenTheatre" target="_blank"
+                                    class="telegram icon-telegram"></a>
+                            </li>
+                            <li class="social-flex"><a href="https://www.youtube.com/@The-hs3xf/about?app=desktop"
+                                    target="_blank" class="youtube icon-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location location-box">
+                        <a href="https://maps.app.goo.gl/FahAuvHHQNGr5CLHA " target="_blank">
+                            <p class="icon-location"></p>
+                        </a>
+                        <p class="text-title"><a href="https://maps.app.goo.gl/rcL3whQ8uGWFzYMf7" target="_blank">Str.
+                                Antonova 13V</a></p>
+                    </div>
+                    <div class="location">
+                        <a href="https://maps.app.goo.gl/FahAuvHHQNGr5CLHA " target="_blank">
+                            <p class="icon-location"></p>
+                        </a>
+                        <p class="text-title text-margin"><a href="https://maps.app.goo.gl/FN7gPRgtYKYTiCvA6"
+                                target="_blank">"Origami" str. Bulgarian 35</a>
+                        </p>
+                    </div>
+                    <div class="Phone">
+                        <a href="tel:+380935528096">
+                            <p class="icon-Phone box-Phone"></p>
+                        </a>
+                        <div class="title">
+                            <p class="text-title text-phone"><a href="tel:+380935528096">+380935528096</a></p>
+                        </div>
+                    </div>
+                    <div class="Envelope ">
+                        <a href="mailto:karenvardanian95@gmail.com">
+                            <p class="icon-Envelope text-Envelop"></p>
+                        </a>
+                        <div class="title">
+                            <p class="text-title text-email"><a
+                                    href="mailto:karenvardanian95@gmail.com">karenvardanian95@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="box-border">
+                        <ul class="social-options">
+                            <li class=".social-flex-mob"><a href="https://www.facebook.com/thetheatervin"
+                                    target="_blank" class="fecebook icon-fecebook"></a>
+                            </li>
+                            <li class=".social-flex-mob"><a
+                                    href="https://instagram.com/the_theater_vin?igshid=NzZlODBkYWE4Ng==" target="_blank"
+                                    class="Instagram icon-Instagram"></a>
+                            </li>
+                            <li class=".social-flex-mob"><a href="https://t.me/KarenTheatre" target="_blank"
+                                    class="telegram icon-telegram"></a>
+                            </li>
+                            <li class=".social-flex-mob"><a href="https://www.youtube.com/@The-hs3xf/about?app=desktop"
+                                    target="_blank" class="youtube icon-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.1630991177526!2d28.520074410929798!3d49.23539687126634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b23e5346341%3A0x5d5d3dd236201348!2z0LLRg9C70LjRhtGPINCe0LvQtdCz0LAg0JDQvdGC0L7QvdC-0LLQsCwgMTPQsiwg0JLRltC90L3QuNGG0Y8sINCS0ZbQvdC90LjRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMjEwMDA!5e0!3m2!1suk!2sua!4v1701296659925!5m2!1suk!2sua"
+                        width="94%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="group-developers">
+                <div class="text-develop">
+                    <a href="developers-en.html" class="icon-academy">
+                        <img class="logo-Academy" src="./src/images/Footer/Logo.svg" alt="Logo.svg">
+                    </a>
+                </div>
+                <div class="text-develop">
+                    <a href="developers-en.html">
+                        <p class="text-logo">Developed by students<br>Vinnytsia IT Academy 2023</p>
+                    </a>
+                </div>
+                <!-- scroll-up -->
+                <div class="scroll-up">
+                    <nav class="navbar arrow">
+                        <a class="navbar-brand navbar-brand-custom" href="#header">
+                            <svg width="auto" height="50" viewBox="0 0 46 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="scroll-up-mr">
+                                <path class="hov-2"
+                                    d="M24.7678 18.2527C23.7915 17.2764 22.2085 17.2764 21.2322 18.2527L5.32233 34.1626C4.34602 35.139 4.34602 36.7219 5.32233 37.6982C6.29864 38.6745 7.88156 38.6745 8.85787 37.6982L23 23.556L37.1421 37.6982C38.1184 38.6745 39.7014 38.6745 40.6777 37.6982C41.654 36.7219 41.654 35.139 40.6777 34.1626L24.7678 18.2527ZM25.5 21.0205L25.5 20.0205L20.5 20.0205L20.5 21.0205L25.5 21.0205Z"
+                                    fill="#970000" />
+                                <path class="hov-3"
+                                    d="M24.4142 33.6063C23.6332 32.8252 22.3668 32.8252 21.5858 33.6063L8.85787 46.3342C8.07682 47.1153 8.07682 48.3816 8.85787 49.1626C9.63891 49.9437 10.9052 49.9437 11.6863 49.1626L23 37.8489L34.3137 49.1626C35.0948 49.9437 36.3611 49.9437 37.1421 49.1626C37.9232 48.3816 37.9232 47.1153 37.1421 46.3342L24.4142 33.6063ZM25 36.0205L25 35.0205L21 35.0205L21 36.0205L25 36.0205Z"
+                                    fill="#FFF" />
+                            </svg>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <!--"footer end"-->
+
+        <!--"modal windows start"-->
+        <section id="modal-overlay">
+            <!-- form window -->
+            <div id="form-window">
+                <div class="window-top">
+                    <button id="close-form-window" type="button">
+                        <img src="src/images/schedule/ToClose.svg" alt="close">
+                    </button>
+                </div>
+                <form class="registration-form" method="post" accept-charset="utf-8">
+                    <div class="input-wrapper">
+                        <input class="phone-number" type="text" name="phone" placeholder="Phone number*" value="">
+                        <p class="error-text"></p>
+                    </div>
+                    <div class="input-wrapper" action="https://intita.com/api/v1/entrant">
+                        <input class="input-name" maxlength="30" type="text" name="first_name" placeholder="Name*"
+                            value="">
+                        <p class="error-text"></p>
+                    </div>
+                    <button class="check-form button" type="submit">
+                        <p>Sign up</p>
+                    </button>
+                    <input type="hidden" name="organization_id" value="107">
+                </form>
+            </div>
+            <div id="second-window">
+                <div class="window-top">
+                    <button id="close-second-window" type="button">
+                        <img src="src/images/schedule/ToClose.svg" alt="close">
+                    </button>
+                </div>
+                <div class="some-text">
+                    <p></p>
+                    <span class="form-name-content">We will call you shortly!</span>
+                </div>
+            </div>
+        </section>
+        <!--"modal window end"-->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- recaptcha -->
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/gEr-ODersURoIfof1hiDm7R5/recaptcha__ru.js"
+        crossorigin="anonymous"
+        integrity="sha384-TLQJmdPnLiPAQT4yetwoOrytOZ6gFBz1x2lmoy5A/z26Q7wBq8QWOoxzSlcobUUY"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP"></script>
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
