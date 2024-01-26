@@ -1,4 +1,4 @@
-#5 Project_the-Theater
+#5 Project the-Theater
 
 Link: https://thetheater.intita.com/
 
